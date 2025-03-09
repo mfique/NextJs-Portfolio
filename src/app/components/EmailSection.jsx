@@ -46,24 +46,23 @@ const EmailSection = () => {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
+        <h5 className="text-xl font-bold text-black dark:text-white my-2">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <p className="text-[#ADB7BE] dark:text-[#6B7280] mb-4 max-w-md">
           {" "}
-          I&apos;m currently exploring new opportunnties and always open to exciting collaborations.
-          Whether you have a questions, a project in mind, or just want to connect, feel free to reach
+          I&apos;m currently exploring new opportunities and always open to exciting collaborations.
+          Whether you have a question, a project in mind, or just want to connect, feel free to reach
           out. I'm eager to discuss innovative ideas and contribute my skills to meaningful work. Looking forward to hearing from you!
         </p>
         <div className="socials flex flex-row gap-2">
-  <Link href="https://github.com/mfique" target="_blank" rel="noopener noreferrer">
-    <Image src={GithubIcon} alt="Github Icon" />
-  </Link>
-  <Link href="https://www.linkedin.com/in/pacifique-mugisha" target="_blank" rel="noopener noreferrer">
-    <Image src={LinkedinIcon} alt="Linkedin Icon" />
-  </Link>
-</div>
-
+          <Link href="https://github.com/mfique" target="_blank" rel="noopener noreferrer">
+            <Image src={GithubIcon} alt="Github Icon" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/pacifique-mugisha" target="_blank" rel="noopener noreferrer">
+            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
+        </div>
       </div>
       <div>
         {emailSubmitted ? (
@@ -75,7 +74,7 @@ const EmailSection = () => {
             <div className="mb-6">
               <label
                 htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
+                className="text-black dark:text-white block mb-2 text-sm font-medium"
               >
                 Your email
               </label>
@@ -84,14 +83,14 @@ const EmailSection = () => {
                 type="email"
                 id="email"
                 required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#18191E] dark:bg-[#f0f0f0] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#6B7280] text-gray-100 dark:text-black text-sm rounded-lg block w-full p-2.5"
                 placeholder="pacifiquem58@gmail.com"
               />
             </div>
             <div className="mb-6">
               <label
                 htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
+                className="text-black dark:text-white block text-sm mb-2 font-medium"
               >
                 Subject
               </label>
@@ -100,21 +99,21 @@ const EmailSection = () => {
                 type="text"
                 id="subject"
                 required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#18191E] dark:bg-[#f0f0f0] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#6B7280] text-gray-100 dark:text-black text-sm rounded-lg block w-full p-2.5"
                 placeholder="What's up"
               />
             </div>
             <div className="mb-6">
               <label
                 htmlFor="message"
-                className="text-white block text-sm mb-2 font-medium"
+                className="text-black dark:text-white block text-sm mb-2 font-medium"
               >
                 Message
               </label>
               <textarea
                 name="message"
                 id="message"
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#18191E] dark:bg-[#f0f0f0] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#6B7280] text-gray-100 dark:text-black text-sm rounded-lg block w-full p-2.5"
                 placeholder="Let's talk business ..."
               />
             </div>
@@ -130,4 +129,5 @@ const EmailSection = () => {
     </section>
   );
 };
+
 export default EmailSection;

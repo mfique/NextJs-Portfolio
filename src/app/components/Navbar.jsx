@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   { title: "About", path: "#about" },

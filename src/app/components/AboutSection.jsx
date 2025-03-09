@@ -10,14 +10,13 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Languages: Javascript, Python, PHP, Java, Dart, HTML, CSS.</li>
-       <li>Framework/Libraries: React, Next.js, Node.js, Flutter, React Native, Spring Boot.</li>
-      <li>Tools/Platforms: Git, Github, REST, APIs, Docker.</li>
-      <li>Other Skills: MicroServices, API Development, Unit Testing, Agile Development</li>
-      <li>Soft Skills: Team-Work, Communication, Problem-Solving, Adaptability, Time-Management.  </li>
+        <li>Framework/Libraries: React, Next.js, Node.js, Flutter, React Native, Spring Boot.</li>
+        <li>Tools/Platforms: Git, Github, REST, APIs, Docker.</li>
+        <li>Other Skills: MicroServices, API Development, Unit Testing, Agile Development</li>
+        <li>Soft Skills: Team-Work, Communication, Problem-Solving, Adaptability, Time-Management.</li>
       </ul>
     ),
   },
-  
   {
     title: "Education",
     id: "education",
@@ -58,40 +57,37 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
+    <section className="text-black dark:text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <Image src="/images/11.png" width={500} height={500} className="rounded-[90px]" />
+        <Image src="/images/11.png" width={500} height={500} className="rounded-[90px]" />
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-          I am Mugisha Pacifique, a Full-Stack Developer and Software Engineer studying at Rwanda Coding Academy.
-          I specialize in JavaScript, Python, PHP, Java, and Dart, with experience in React, Django, Flutter, and Spring Boot.
-          Skilled in Git, REST APIs, and databases like MySQL and PostgreSQL, I build scalable and efficient applications.
-          Beyond tech, I have strong leadership, teamwork, and problem-solving skills, serving as a reading club leader and
-          Vice President of the Red Cross at my college. I am adaptable, eager to learn, and open to new opportunities in tech and innovation.
+          <h2 className="text-4xl font-bold text-black dark:text-white mb-4">About Me</h2>
+          <p className="text-base lg:text-lg text-black dark:text-white">
+            I am Mugisha Pacifique, a Full-Stack Developer and Software Engineer studying at Rwanda Coding Academy.
+            I specialize in JavaScript, Python, PHP, Java, and Dart, with experience in React, Django, Flutter, and Spring Boot.
+            Skilled in Git, REST APIs, and databases like MySQL and PostgreSQL, I build scalable and efficient applications.
+            Beyond tech, I have strong leadership, teamwork, and problem-solving skills, serving as a reading club leader and
+            Vice President of the Red Cross at my college. I am adaptable, eager to learn, and open to new opportunities in tech and innovation.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Skills{" "}
+              Skills
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Education{" "}
+              Education
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              {" "}
-              Certifications{" "}
+              Certifications
             </TabButton>
           </div>
           <div className="mt-8">
