@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -7,7 +8,9 @@ const variants = {
 };
 
 const TabButton = ({ active, selectTab, children }) => {
-  const buttonClasses = active ? "text-black dark:text-white" : "text-[#ADB7BE] dark:text-[#6B7280]";
+  const buttonClasses = active
+    ? "text-black dark:text-white border-b border-primary-500"
+    : "text-gray-600 dark:text-[#ADB7BE] hover:text-black dark:hover:text-white";
 
   return (
     <button onClick={selectTab}>

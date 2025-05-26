@@ -51,15 +51,15 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] dark:text-[#6B7280] mb-4 max-w-md">
           {" "}
-          I&apos;m currently exploring new opportunities and always open to exciting collaborations.
-          Whether you have a question, a project in mind, or just want to connect, feel free to reach
-          out. I'm eager to discuss innovative ideas and contribute my skills to meaningful work. Looking forward to hearing from you!
+          I&apos;m currently looking for new opportunities, my inbox is always
+          open. Whether you have a question or just want to say hi, I&apos;ll
+          try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/mfique" target="_blank" rel="noopener noreferrer">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/pacifique-mugisha" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.linkedin.com/in/mugisha-pacifique-347811367/" target="_blank" rel="noopener noreferrer">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
@@ -70,7 +70,7 @@ const EmailSection = () => {
             Email sent successfully!
           </p>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
+          <form className="flex flex-col space-y-6 bg-white/5 p-8 rounded-2xl backdrop-blur-sm shadow-lg border border-sky-200/10" onSubmit={handleSubmit}>
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -83,7 +83,7 @@ const EmailSection = () => {
                 type="email"
                 id="email"
                 required
-                className="bg-[#18191E] dark:bg-[#f0f0f0] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#6B7280] text-gray-100 dark:text-black text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#18191E] dark:bg-[#f0f0f0] border border-sky-500/20 placeholder-[#9CA2A9] dark:placeholder-[#6B7280] text-gray-100 dark:text-black text-sm rounded-xl block w-full p-3 transition-all duration-300 focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none"
                 placeholder="pacifiquem58@gmail.com"
               />
             </div>
@@ -99,7 +99,7 @@ const EmailSection = () => {
                 type="text"
                 id="subject"
                 required
-                className="bg-[#18191E] dark:bg-[#f0f0f0] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#6B7280] text-gray-100 dark:text-black text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#18191E] dark:bg-[#f0f0f0] border border-sky-500/20 placeholder-[#9CA2A9] dark:placeholder-[#6B7280] text-gray-100 dark:text-black text-sm rounded-xl block w-full p-3 transition-all duration-300 focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none"
                 placeholder="What's up"
               />
             </div>
@@ -113,15 +113,19 @@ const EmailSection = () => {
               <textarea
                 name="message"
                 id="message"
-                className="bg-[#18191E] dark:bg-[#f0f0f0] border border-[#33353F] placeholder-[#9CA2A9] dark:placeholder-[#6B7280] text-gray-100 dark:text-black text-sm rounded-lg block w-full p-2.5"
+                rows="4"
+                className="bg-[#18191E] dark:bg-[#f0f0f0] border border-sky-500/20 placeholder-[#9CA2A9] dark:placeholder-[#6B7280] text-gray-100 dark:text-black text-sm rounded-xl block w-full p-3 transition-all duration-300 focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none resize-none"
                 placeholder="Let's talk business ..."
               />
             </div>
             <button
               type="submit"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="bg-gradient-to-r from-sky-500 to-teal-500 hover:from-sky-600 hover:to-teal-600 text-white font-medium py-3 px-5 rounded-xl w-full transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] flex items-center justify-center gap-2"
             >
-              Send Message
+              <span>Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
             </button>
           </form>
         )}
